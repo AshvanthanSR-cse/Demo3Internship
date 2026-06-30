@@ -9,7 +9,7 @@ async function upload(e){
  const formData=new FormData();
  formData.append("file",file);
 
- const response=await fetch("YOUR_HTTP_API_UPLOAD_URL",{
+ const response=await fetch("https://l2krdj989f.execute-api.us-east-1.amazonaws.com/upload",{
     method:"POST",
     body:formData
  });
